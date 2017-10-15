@@ -14,7 +14,7 @@ using Myflix.Models;
 
 namespace Myflix.Controllers
 {
-    [Authorize]
+   
     public class MeController : ApiController
     {
         private ApplicationUserManager _userManager;
