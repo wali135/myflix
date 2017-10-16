@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Myflix
+namespace myflix
 {
     public class FilterConfig
     {
