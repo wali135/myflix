@@ -13,9 +13,13 @@ namespace myflix.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Watch(string id)
         {
-            ViewBag.Message = "Your application description page.";
+            if (String.IsNullOrEmpty(id))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            ViewBag.uid = id;
 
             return View();
         }
