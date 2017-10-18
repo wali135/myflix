@@ -38,3 +38,7 @@ C:\Users\khurshid\Documents\GitHub\myflix\myflix\bin\Newtonsoft.Json.xml
 C:\Users\khurshid\Documents\GitHub\myflix\myflix\obj\Debug\myflix.csprojResolveAssemblyReference.cache
 C:\Users\khurshid\Documents\GitHub\myflix\myflix\obj\Debug\myflix.dll
 C:\Users\khurshid\Documents\GitHub\myflix\myflix\obj\Debug\myflix.pdb
+C:\Users\khurshid\Documents\GitHub\myflix\myflix\bin\EntityFramework.dll
+C:\Users\khurshid\Documents\GitHub\myflix\myflix\bin\EntityFramework.SqlServer.dll
+C:\Users\khurshid\Documents\GitHub\myflix\myflix\bin\EntityFramework.xml
+C:\Users\khurshid\Documents\GitHub\myflix\myflix\bin\EntityFramework.SqlServer.xml

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using myflix.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,8 @@ namespace myflix.Controllers
     {
         public ActionResult Index()
         {
+            var entities = new myflixDBEntities();
+            ViewBag.movies = entities.Movies.ToList();
             return View();
         }
 
@@ -20,6 +23,7 @@ namespace myflix.Controllers
                 return RedirectToAction("Index", "Home");
             }
             ViewBag.uid = id;
+           
 
             return View();
         }
