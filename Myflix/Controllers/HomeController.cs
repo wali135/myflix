@@ -23,7 +23,10 @@ namespace myflix.Controllers
                 return RedirectToAction("Index", "Home");
             }
             ViewBag.uid = id;
-           
+            var entities = new myflixDBEntities();
+            var thismovie = entities.Movies.SingleOrDefault(obj => obj.uid == id);
+            thismovie.Views = thismovie.Views + 1;
+
 
             return View();
         }
