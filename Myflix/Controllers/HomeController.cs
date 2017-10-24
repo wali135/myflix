@@ -12,7 +12,14 @@ namespace myflix.Controllers
         public ActionResult Index()
         {
             var entities = new myflixDBEntities();
-            ViewBag.movies = entities.Movies.ToList();
+            try
+            {
+                ViewBag.movies = entities.Movies.ToList();
+            } 
+            catch(Exception ex)
+            {
+                return View("Entity Error="+ex.Message);
+            }
             return View();
         }
 

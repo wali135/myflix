@@ -85,9 +85,10 @@ a:hover {
   transition: 450ms transform;
   transition: 450ms transform, 450ms -webkit-transform;
   font-size: 0;
-  border:double;
+
   white-space: nowrap;
-  margin: 70.3125px 0;
+  margin:0px 0px;
+  margin-bottom: 40.3125px;
   padding-bottom: 10px;
 }
 .tile {
@@ -159,6 +160,20 @@ a:hover {
   position: absolute;
   bottom: 0;
   padding: 10px;
+}
+.title__lang{
+    position: absolute;
+  top: 0;
+  padding: 3px;
+  background-color:black;
+  color:white;
+}
+.title__res{
+position: absolute;
+  right: 0;
+  padding: 3px;
+  background-color:yellow;
+  color:black;
 }
 .row__inner:hover {
   -webkit-transform: translate3d(-62.5px, 0, 0);
