@@ -24,8 +24,12 @@ namespace myflix.Controllers
             }
             ViewBag.uid = id;
             var entities = new myflixDBEntities();
-            var thismovie = entities.Movies.SingleOrDefault(obj => obj.uid == id);
-            thismovie.Views = thismovie.Views + 1;
+            var result = entities.Movies.SingleOrDefault(obj => obj.uid == id);
+            if (result != null)
+            {
+                result.Views = result.Views + 1;
+                entities.SaveChanges();
+            }
 
 
             return View();
