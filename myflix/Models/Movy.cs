@@ -17,11 +17,18 @@ namespace myflix.Models
         public string uid { get; set; }
         public string imid { get; set; }
         public string Name { get; set; }
+        public string Year { get; set; }
         public string Language { get; set; }
-        public string Genre { get; set; }
+        public string Genre1 { get; set; }
+        public string Genre2 { get; set; }
+        public string Genre3 { get; set; }
         public string Resolution { get; set; }
         public string Image { get; set; }
-        public string Year { get; set; }
-        public string Actor { get; set; }
+        public string Cast1 { get; set; }
+        public string Cast2 { get; set; }
+        public string Cast3 { get; set; }
+        public string Cast4 { get; set; }
+        public string Cast5 { get; set; }
+        public Nullable<int> Views { get; set; }
     }
 }

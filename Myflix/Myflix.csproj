@@ -157,15 +157,25 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\posters\Bhairava2017.jpg" />
     <Content Include="Content\posters\bhoothnath2008.jpg" />
+    <Content Include="Content\posters\Don No 12007.jpg" />
     <Content Include="Content\posters\Garam Masala2005.jpg" />
+    <Content Include="Content\posters\Hero No. Zero2012.jpg" />
     <Content Include="Content\posters\hulchul2004.jpg" />
     <Content Include="Content\posters\hungama2003.jpg" />
+    <Content Include="Content\posters\Janta Garage2016.jpg" />
     <Content Include="Content\posters\judwaa1997.jpg" />
+    <Content Include="Content\posters\Kaashmora2016.jpg" />
+    <Content Include="Content\posters\Main Hoon Lucky The Racer2014.jpg" />
+    <Content Include="Content\posters\Mard Ki Zaban 22015.jpg" />
     <Content Include="Content\posters\Rascals2011.jpg" />
+    <Content Include="Content\posters\Rowdy Leader2012.jpg" />
     <Content Include="Content\posters\sarrainodu2017.jpg" />
+    <Content Include="Content\posters\Son of Satyamurthy2015.jpg" />
     <Content Include="Content\posters\sura2017.jpg" />
     <Content Include="Content\posters\Tezz2012.jpg" />
+    <Content Include="Content\posters\Veerta The Power2008.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -201,7 +211,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

@@ -7,12 +7,19 @@
     <Property Name="uid" Type="nchar" MaxLength="15" Nullable="false" />
     <Property Name="imid" Type="nchar" MaxLength="10" />
     <Property Name="Name" Type="nchar" MaxLength="25" Nullable="false" />
-    <Property Name="Language" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Genre" Type="nchar" MaxLength="10" />
-    <Property Name="Resolution" Type="nchar" MaxLength="8" />
-    <Property Name="Image" Type="nchar" MaxLength="50" />
     <Property Name="Year" Type="nchar" MaxLength="4" Nullable="false" />
-    <Property Name="Actor" Type="nchar" MaxLength="10" />
+    <Property Name="Language" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Genre1" Type="nchar" MaxLength="10" />
+    <Property Name="Genre2" Type="nchar" MaxLength="10" />
+    <Property Name="Genre3" Type="nchar" MaxLength="10" />
+    <Property Name="Resolution" Type="nchar" MaxLength="8" />
+    <Property Name="Image" Type="nchar" MaxLength="35" />
+    <Property Name="Cast1" Type="nchar" MaxLength="25" />
+    <Property Name="Cast2" Type="nchar" MaxLength="25" />
+    <Property Name="Cast3" Type="nchar" MaxLength="25" />
+    <Property Name="Cast4" Type="nchar" MaxLength="25" />
+    <Property Name="Cast5" Type="nchar" MaxLength="25" />
+    <Property Name="Views" Type="int" />
   </EntityType>
   <EntityContainer Name="myflixDBModelStoreContainer">
     <EntitySet Name="Movies" EntityType="Self.Movies" Schema="dbo" store:Type="Tables" />

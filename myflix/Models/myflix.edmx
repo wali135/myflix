@@ -12,12 +12,19 @@
           <Property Name="uid" Type="nchar" MaxLength="15" Nullable="false" />
           <Property Name="imid" Type="nchar" MaxLength="10" />
           <Property Name="Name" Type="nchar" MaxLength="25" Nullable="false" />
-          <Property Name="Language" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="Genre" Type="nchar" MaxLength="10" />
-          <Property Name="Resolution" Type="nchar" MaxLength="8" />
-          <Property Name="Image" Type="nchar" MaxLength="50" />
           <Property Name="Year" Type="nchar" MaxLength="4" Nullable="false" />
-          <Property Name="Actor" Type="nchar" MaxLength="10" />
+          <Property Name="Language" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Genre1" Type="nchar" MaxLength="10" />
+          <Property Name="Genre2" Type="nchar" MaxLength="10" />
+          <Property Name="Genre3" Type="nchar" MaxLength="10" />
+          <Property Name="Resolution" Type="nchar" MaxLength="8" />
+          <Property Name="Image" Type="nchar" MaxLength="35" />
+          <Property Name="Cast1" Type="nchar" MaxLength="25" />
+          <Property Name="Cast2" Type="nchar" MaxLength="25" />
+          <Property Name="Cast3" Type="nchar" MaxLength="25" />
+          <Property Name="Cast4" Type="nchar" MaxLength="25" />
+          <Property Name="Cast5" Type="nchar" MaxLength="25" />
+          <Property Name="Views" Type="int" />
         </EntityType>
         <EntityContainer Name="myflixDBModelStoreContainer">
           <EntitySet Name="Movies" EntityType="Self.Movies" Schema="dbo" store:Type="Tables" />
@@ -34,12 +41,19 @@
           <Property Name="uid" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="imid" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="Name" Type="String" MaxLength="25" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="Language" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="Genre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Resolution" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
-          <Property Name="Image" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="Year" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
-          <Property Name="Actor" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Language" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Genre1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Genre2" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Genre3" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Resolution" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+          <Property Name="Image" Type="String" MaxLength="35" FixedLength="true" Unicode="true" />
+          <Property Name="Cast1" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
+          <Property Name="Cast2" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
+          <Property Name="Cast3" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
+          <Property Name="Cast4" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
+          <Property Name="Cast5" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
+          <Property Name="Views" Type="Int32" />
         </EntityType>
         <EntityContainer Name="myflixDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Movies" EntityType="Self.Movy" />
@@ -56,12 +70,19 @@
                 <ScalarProperty Name="uid" ColumnName="uid" />
                 <ScalarProperty Name="imid" ColumnName="imid" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
                 <ScalarProperty Name="Language" ColumnName="Language" />
-                <ScalarProperty Name="Genre" ColumnName="Genre" />
+                <ScalarProperty Name="Genre1" ColumnName="Genre1" />
+                <ScalarProperty Name="Genre2" ColumnName="Genre2" />
+                <ScalarProperty Name="Genre3" ColumnName="Genre3" />
                 <ScalarProperty Name="Resolution" ColumnName="Resolution" />
                 <ScalarProperty Name="Image" ColumnName="Image" />
-                <ScalarProperty Name="Year" ColumnName="Year" />
-                <ScalarProperty Name="Actor" ColumnName="Actor" />
+                <ScalarProperty Name="Cast1" ColumnName="Cast1" />
+                <ScalarProperty Name="Cast2" ColumnName="Cast2" />
+                <ScalarProperty Name="Cast3" ColumnName="Cast3" />
+                <ScalarProperty Name="Cast4" ColumnName="Cast4" />
+                <ScalarProperty Name="Cast5" ColumnName="Cast5" />
+                <ScalarProperty Name="Views" ColumnName="Views" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
