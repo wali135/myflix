@@ -1,13 +1,31 @@
-﻿
+﻿<link rel="stylesheet" href="~/Content/Site.css">
 @{
     ViewBag.Title = "My Flix";
 }
+<div class="row__inner">
+    @foreach (var item in ViewBag.movies)
+    {
 
-@foreach (var item in ViewBag.movies)
-{
-    <div class="poster">
-    <a href="~/watch/@(item.uid.ToString().Trim())">
-        <img src="~/Content/posters/@(item.Image.ToString().Trim())" alt="@(item.Name.ToString().Trim())" height="140" width="100">
-    </a>
+        
+            <div class="tile">
+                <a href="~/watch/@(item.uid.ToString().Trim())">
+                    <div class="tile__media">
+
+                        <img class="tile__img" src="~/Content/posters/@(item.Image.ToString().Trim())" alt="@(item.Name.ToString().Trim())" />
+
+                    </div>
+                    <div class="tile__details">
+                        <div class="tile__title">
+                            @(item.Name.ToString().Trim()) (@(item.Year))
+                        </div>
+                    </div>
+                </a>
+</div>
+        
+
+
+
+
+    }
     </div>
-}
+
