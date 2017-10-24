@@ -27,6 +27,7 @@ namespace myflix.Controllers
             var result = entities.Movies.SingleOrDefault(obj => obj.uid == id);
             if (result != null)
             {
+                ViewBag.Title = ">"+result.Name;
                 result.Views = result.Views + 1;
                 entities.SaveChanges();
             }
