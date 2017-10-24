@@ -157,9 +157,15 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\posters\boothnath2008.jpg" />
+    <Content Include="Content\posters\Garam Masala2005.jpg" />
+    <Content Include="Content\posters\hulchul2004.jpg" />
+    <Content Include="Content\posters\hungama2003.jpg" />
     <Content Include="Content\posters\judwaa1997.jpg" />
+    <Content Include="Content\posters\Rascals2011.jpg" />
     <Content Include="Content\posters\sarrainodu2017.jpg" />
     <Content Include="Content\posters\sura2017.jpg" />
+    <Content Include="Content\posters\Tezz2012.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
