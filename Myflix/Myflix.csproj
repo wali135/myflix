@@ -183,12 +183,6 @@
     <Content Include="Content\posters\Tezz2012.jpg" />
     <Content Include="Content\posters\Veerta The Power2008.jpg" />
     <Content Include="Content\posters\wanted2009.jpg" />
-    <Content Include="Content\slick\ajax-loader.gif" />
-    <Content Include="Content\slick\fonts\slick.svg" />
-    <Content Include="Content\slick\slick-theme.css" />
-    <Content Include="Content\slick\slick.css" />
-    <Content Include="Content\slick\slick.js" />
-    <Content Include="Content\slick\slick.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -217,14 +211,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\slick\config.rb" />
-    <Content Include="Content\slick\fonts\slick.eot" />
-    <Content Include="Content\slick\fonts\slick.ttf" />
-    <Content Include="Content\slick\fonts\slick.woff" />
-    <Content Include="Content\slick\slick-theme.less" />
-    <Content Include="Content\slick\slick-theme.scss" />
-    <Content Include="Content\slick\slick.less" />
-    <Content Include="Content\slick\slick.scss" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
