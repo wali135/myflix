@@ -75,10 +75,16 @@ a:hover {
 .contain {
   width: 100%;
 }
-.row {
-  overflow: scroll;
+.rowee {
+  overflow:auto;
   width: 100%;
 }
+
+.toptemp{
+    height:120px;
+    width:100%;
+}
+
 .row__inner {
   -webkit-transition: 450ms -webkit-transform;
   transition: 450ms -webkit-transform;
@@ -88,8 +94,10 @@ a:hover {
 
   white-space: nowrap;
   margin:0px 0px;
+  margin-top:50px;
   margin-bottom: 40.3125px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
+  padding-top:20px;
 }
 .tile {
   position: relative;

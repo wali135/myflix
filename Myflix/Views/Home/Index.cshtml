@@ -3,6 +3,10 @@
     ViewBag.Title = "My Flix";
 }
 
+<div class="toptemp">
+    sS
+</div>
+
 
 <div class="row__inner">
 
@@ -30,6 +34,7 @@
                     </div>
                 </a>
 </div>
+  
         
 
 
@@ -38,4 +43,41 @@
     }
     </div>
     
+    <hr />
+<h4>COMEDIES</h4>
+    <div class="row__inner">
+
+        @foreach (var item in ViewBag.comedy)
+        {
+
+
+            <div class="tile">
+                <a href="~/watch/@(item.uid.ToString().Trim())">
+                    <div class="tile__media">
+
+                        <img class="tile__img" src="~/Content/posters/@(item.Image.ToString().Trim())" alt="@(item.Name.ToString().Trim())" />
+
+                    </div>
+                    <div class="tile__details">
+                        <div class="title__lang">
+                            @(item.Language.ToString().Trim())
+                        </div>
+                        <div class="title__res">
+                            @(item.Resolution.ToString().Trim())p
+                        </div>
+                        <div class="tile__title">
+                            @(item.Name.ToString().Trim()) (@(item.Year))
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+
+
+        }
+    </div>
+
 

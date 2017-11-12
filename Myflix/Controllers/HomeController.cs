@@ -14,7 +14,8 @@ namespace myflix.Controllers
             var entities = new myflixDBEntities();
             try
             {
-                ViewBag.movies = entities.Movies.ToList();
+                ViewBag.movies = entities.Movies.SqlQuery("Select TOP 8 * from movies ORDER BY NEWID()");
+                ViewBag.comedy = entities.Movies.SqlQuery("Select TOP 8 * from movies where genre1='comedy' OR genre2='comedy' OR genre3='comedy' ORDER BY views DESC");
             } 
             catch(Exception ex)
             {
