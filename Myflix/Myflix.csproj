@@ -160,6 +160,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\posters\3 idiots2009.jpg" />
     <Content Include="Content\posters\Awara paagal deewana2002.jpg" />
+    <Content Include="Content\posters\Baadshah1999.jpg" />
     <Content Include="Content\posters\Bade Miyan Chote Miyan1998.jpg" />
     <Content Include="Content\posters\Bhairava2017.jpg" />
     <Content Include="Content\posters\bhoothnath2008.jpg" />
@@ -198,6 +199,7 @@
     <Content Include="Content\posters\Singham2011.jpg" />
     <Content Include="Content\posters\Son of Satyamurthy2015.jpg" />
     <Content Include="Content\posters\sura2010.jpg" />
+    <Content Include="Content\posters\Taarzan The Wonder2004.jpg" />
     <Content Include="Content\posters\Tezz2012.jpg" />
     <Content Include="Content\posters\Veerta The Power2008.jpg" />
     <Content Include="Content\posters\wanted2009.jpg" />
