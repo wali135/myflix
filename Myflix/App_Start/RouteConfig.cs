@@ -13,6 +13,7 @@ namespace myflix
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("genrebased", "genre/{action}", new { controller = "Genre", action = "comedy" });
             routes.MapRoute(
                 name: "Default",
                 url: "{action}/{id}",
