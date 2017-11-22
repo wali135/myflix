@@ -176,6 +176,7 @@
     <Content Include="Content\posters\Awara paagal deewana2002.jpg" />
     <Content Include="Content\posters\Baadshah1999.jpg" />
     <Content Include="Content\posters\Bade Miyan Chote Miyan1998.jpg" />
+    <Content Include="Content\posters\Benaam Badsha1991.jpg" />
     <Content Include="Content\posters\Bhairava2017.jpg" />
     <Content Include="Content\posters\bhoothnath2008.jpg" />
     <Content Include="Content\posters\Chirutha2007.jpg" />
@@ -203,11 +204,15 @@
     <Content Include="Content\posters\judwaa1997.jpg" />
     <Content Include="Content\posters\Kaashmora2016.jpg" />
     <Content Include="Content\posters\Khatta Meetha2010.jpg" />
+    <Content Include="Content\posters\Loafer1996.jpg" />
     <Content Include="Content\posters\Main Hoon Lucky The Racer2014.jpg" />
     <Content Include="Content\posters\Mard Ki Zaban 22015.jpg" />
     <Content Include="Content\posters\Mujhse Shaadi Karogi2004.jpg" />
     <Content Include="Content\posters\OMG Oh My God!2012.jpg" />
+    <Content Include="Content\posters\One 2 Ka 42001.jpg" />
+    <Content Include="Content\posters\Pardes1997.jpg" />
     <Content Include="Content\posters\Phir Hera Pheri2006.jpg" />
+    <Content Include="Content\posters\Pyar Diwana Hota Hai2002.jpg" />
     <Content Include="Content\posters\Rascals2011.jpg" />
     <Content Include="Content\posters\Rowdy Leader2012.jpg" />
     <Content Include="Content\posters\Rustom2016.jpg" />
@@ -217,6 +222,7 @@
     <Content Include="Content\posters\Son of Satyamurthy2015.jpg" />
     <Content Include="Content\posters\sura2010.jpg" />
     <Content Include="Content\posters\Taarzan The Wonder2004.jpg" />
+    <Content Include="Content\posters\Tere naam2003.jpg" />
     <Content Include="Content\posters\Tezz2012.jpg" />
     <Content Include="Content\posters\Veerta The Power2008.jpg" />
     <Content Include="Content\posters\wanted2009.jpg" />
