@@ -5,13 +5,14 @@
 }
 <h2>@ViewBag.Title.</h2>
 
+
 @using (Html.BeginForm())
 {
     <text>
 
 
-        Imid: <input type="text" name="imid" />
-        <input type="button" value="Parse" onclick="imdb_parse();" />
+        Imid: <input type="text" id="imid_input" name="imid" />
+        <input type="button" id="driver" value="Get Data"/>
 
     </text>
 }
@@ -25,14 +26,14 @@
         <div class="form-group">
             @Html.LabelFor(model => model.uid, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.uid, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.uid, new { htmlAttributes = new {@id="mov_uid", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.uid, "", new { @class = "text-danger" })
             </div>
         </div>
         <div class="form-group">
             @Html.LabelFor(model => model.imid, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.imid, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.imid, new { htmlAttributes = new {@id="mov_imid", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.imid, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -40,7 +41,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @id = "mov_name", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -48,7 +49,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Year, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Year, new { htmlAttributes = new {@id="mov_year", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Year, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -56,7 +57,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Language, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Language, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Language, new { htmlAttributes = new {@id="mov_lang", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Language, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -64,7 +65,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Genre1, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Genre1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Genre1, new { htmlAttributes = new {@id="mov_gen1", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Genre1, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -73,7 +74,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Genre2, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Genre2, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Genre2, new { htmlAttributes = new {@id="mov_gen2", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Genre2, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -81,7 +82,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Genre3, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Genre3, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Genre3, new { htmlAttributes = new {@id="mov_gen3", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Genre3, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -89,7 +90,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Resolution, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Resolution, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Resolution, new { htmlAttributes = new {@id="mov_res", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Resolution, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -97,7 +98,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Cast1, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Cast1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Cast1, new { htmlAttributes = new {@id="mov_cast1", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Cast1, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -105,7 +106,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Cast2, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Cast2, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Cast2, new { htmlAttributes = new { @id = "mov_cast2", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Cast2, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -113,7 +114,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Cast3, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Cast3, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Cast3, new { htmlAttributes = new { @id = "mov_cast3", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Cast3, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -121,7 +122,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Cast4, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Cast4, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Cast4, new { htmlAttributes = new { @id = "mov_cast4", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Cast4, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -129,7 +130,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Cast5, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Cast5, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Cast5, new { htmlAttributes = new { @id = "mov_cast5", @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Cast5, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -137,9 +138,53 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="About" class="btn btn-default" />
+                <input type="submit" value="ADD" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $(document).ready(function () {
+
+        $('#driver').click(function (event) {
+            
+            var imid = document.getElementById('imid_input').value;
+            if (!imid == "") {
+                $.getJSON("http://www.theimdbapi.org/api/movie?movie_id=" + imid, function (jd) {
+                    document.getElementById('mov_name').value = jd.title;
+                    document.getElementById('mov_year').value = jd.year;
+                    document.getElementById('mov_lang').value = jd.metadata.languages[0];
+                    document.getElementById('mov_gen1').value = jd.genre[0];
+                    if (jd.genre[1] != undefined) {
+                        document.getElementById('mov_gen2').value = jd.genre[1];
+                    }
+                    if (jd.genre[2] != undefined) {
+                        document.getElementById('mov_gen3').value = jd.genre[2];
+                    }
+                    if (jd.cast[0].name != undefined) {
+                        document.getElementById('mov_cast1').value = jd.cast[0].name;
+                    }
+                    if (jd.cast[1].name != undefined) {
+                        document.getElementById('mov_cast2').value = jd.cast[1].name;
+                    }
+                    if (jd.cast[2].name != undefined) {
+                        document.getElementById('mov_cast3').value = jd.cast[2].name;
+                    }
+                    if (jd.cast[3].name != undefined) {
+                        document.getElementById('mov_cast4').value = jd.cast[3].name;
+                    }
+                    if (jd.cast[3].name != undefined) {
+                        document.getElementById('mov_cast5').value = jd.cast[4].name;
+                    }
+                    
+                    document.getElementById('mov_imid').value = jd.imdb_id;
+                });
+            }
+           
+
+
+        });
+    });
+</script>

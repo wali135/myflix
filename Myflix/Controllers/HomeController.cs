@@ -54,14 +54,24 @@ namespace myflix.Controllers
 "uid,imid,name,language,year,Genre1, Genre2, Genre3,Resolution,Image,cast1,cast2,cast3,cast4,cast5")] Movy movy)
         {
             myflixDBEntities entities = new myflixDBEntities();
-            if (ModelState.IsValid)
-            {
-                movy.Views = 0;
-                movy.Image = movy.Name + movy.Year + ".jpg";
-                entities.Movies.Add(movy);
-                entities.SaveChanges();
+            
+                if (ModelState.IsValid)
+                {
+                    movy.Views = 0;
+                    movy.Image = movy.Name + movy.Year + ".jpg";
+                try
+                {
+                    entities.Movies.Add(movy);
+                    entities.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    return View("Entity Error=" + ex.Message);
+                }
                 return RedirectToAction("Add");
-            }
+                }
+            
+           
 
             return View(movy);
 
