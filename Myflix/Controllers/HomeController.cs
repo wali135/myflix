@@ -4,17 +4,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 
 namespace myflix.Controllers
 {
     public class HomeController : Controller
     {
+        [OutputCache(Duration =86400, Location =OutputCacheLocation.Server)]
         public ActionResult Index()
         {
+
             var entities = new myflixDBEntities();
             try
             {
                 ViewBag.movies = entities.Movies.SqlQuery("Select TOP 8 * from movies ORDER BY NEWID()");
+                ViewBag.movies2 = entities.Movies.SqlQuery("Select TOP 8 * from movies ORDER BY NEWID()");
                 ViewBag.comedy = entities.Movies.SqlQuery("Select TOP 8 * from movies where genre1='comedy' OR genre2='comedy' OR genre3='comedy' ORDER BY views DESC");
             } 
             catch(Exception ex)
