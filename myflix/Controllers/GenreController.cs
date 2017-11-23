@@ -20,7 +20,7 @@ namespace myflix.Controllers
             var entities = new myflixDBEntities();
             try
             {
-                ViewBag.movies = entities.Movies.SqlQuery("Select TOP 8 * from movies where genre1='comedy' OR genre2='comedy' OR genre3='comedy' ORDER BY views DESC");
+                ViewBag.movies = entities.Movies.SqlQuery("Select TOP 8 * from movies where genre1='comedy' ORDER BY views DESC");
             }
             catch (Exception ex)
             {
@@ -34,7 +34,7 @@ namespace myflix.Controllers
             var entities = new myflixDBEntities();
             try
             {
-                ViewBag.movies = entities.Movies.SqlQuery("Select TOP 8 * from movies where genre1='action' OR genre2='action' OR genre3='action' ORDER BY views DESC");
+                ViewBag.movies = entities.Movies.SqlQuery("Select TOP 8 * from movies where genre1='action' ORDER BY views DESC");
             }
             catch (Exception ex)
             {
@@ -47,7 +47,7 @@ namespace myflix.Controllers
             var entities = new myflixDBEntities();
             try
             {
-                ViewBag.movies = entities.Movies.SqlQuery("Select TOP 8 * from movies where genre1='drama' OR genre2='drama' OR genre3='drama' ORDER BY views DESC");
+                ViewBag.movies = entities.Movies.SqlQuery("Select TOP 8 * from movies where genre1='drama' ORDER BY views DESC");
             }
             catch (Exception ex)
             {
