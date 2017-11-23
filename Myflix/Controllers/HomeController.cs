@@ -10,7 +10,7 @@ namespace myflix.Controllers
 {
     public class HomeController : Controller
     {
-        [OutputCache(Duration =86400, Location =OutputCacheLocation.Server)]
+        [OutputCache(Duration =3600, Location =OutputCacheLocation.Server)]
         public ActionResult Index()
         {
 
