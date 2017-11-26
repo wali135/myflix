@@ -181,6 +181,7 @@
     <Content Include="Content\posters\Awara paagal deewana2002.jpg" />
     <Content Include="Content\posters\Baadshah1999.jpg" />
     <Content Include="Content\posters\Bade Miyan Chote Miyan1998.jpg" />
+    <Content Include="Content\posters\Baghban2003.jpg" />
     <Content Include="Content\posters\Benaam Badsha1991.jpg" />
     <Content Include="Content\posters\Bhairava2017.jpg" />
     <Content Include="Content\posters\bhoothnath2008.jpg" />
@@ -194,6 +195,7 @@
     <Content Include="Content\posters\Dhamaal2007.jpg" />
     <Content Include="Content\posters\Dhol2007.jpg" />
     <Content Include="Content\posters\Dhruva2016.jpg" />
+    <Content Include="Content\posters\Dil Chahta hai2001.jpg" />
     <Content Include="Content\posters\Dil Ka Rishta2003.jpg" />
     <Content Include="Content\posters\Dil Vil Pyar Vyar2002.jpg" />
     <Content Include="Content\posters\Dilwale1994.jpg" />
@@ -215,6 +217,7 @@
     <Content Include="Content\posters\Hero No. 11997.jpg" />
     <Content Include="Content\posters\Hero No. Zero2012.jpg" />
     <Content Include="Content\posters\Holiday2014.jpg" />
+    <Content Include="Content\posters\Housefull2010.jpg" />
     <Content Include="Content\posters\hulchul2004.jpg" />
     <Content Include="Content\posters\hungama2003.jpg" />
     <Content Include="Content\posters\Jaane Tu... Ya Jaane Na2008.jpg" />
@@ -223,11 +226,13 @@
     <Content Include="Content\posters\Jannat2008.jpg" />
     <Content Include="Content\posters\Janta Garage2016.jpg" />
     <Content Include="Content\posters\Jeena Sirf Merre Liye2002.jpg" />
+    <Content Include="Content\posters\Jolly LLB2013.jpg" />
     <Content Include="Content\posters\judwaa1997.jpg" />
     <Content Include="Content\posters\Kaante2002.jpg" />
     <Content Include="Content\posters\Kaashmora2016.jpg" />
     <Content Include="Content\posters\Kachche Dhaage1999.jpg" />
     <Content Include="Content\posters\Kadamban2017.jpg" />
+    <Content Include="Content\posters\Kaho Naa. Pyaar Hai2000.jpg" />
     <Content Include="Content\posters\Khatta Meetha2010.jpg" />
     <Content Include="Content\posters\Kunwara2000.jpg" />
     <Content Include="Content\posters\Kurukshetra2000.jpg" />
@@ -247,9 +252,11 @@
     <Content Include="Content\posters\Pyaar Diwana Hota Hai2002.jpg" />
     <Content Include="Content\posters\Pyare Mohan2006.jpg" />
     <Content Include="Content\posters\Qayamat2003.jpg" />
+    <Content Include="Content\posters\Queen2013.jpg" />
     <Content Include="Content\posters\Rascals2011.jpg" />
     <Content Include="Content\posters\Rehnaa Hai Terre Dil Mein2001.jpg" />
     <Content Include="Content\posters\Rowdy Leader2012.jpg" />
+    <Content Include="Content\posters\Rowdy Rathore2012.jpg" />
     <Content Include="Content\posters\Rudraksh2004.jpg" />
     <Content Include="Content\posters\Rustom2016.jpg" />
     <Content Include="Content\posters\Sankat City2009.jpg" />
@@ -258,6 +265,7 @@
     <Content Include="Content\posters\Shaurya2008.jpg" />
     <Content Include="Content\posters\Singham2011.jpg" />
     <Content Include="Content\posters\Son of Satyamurthy2015.jpg" />
+    <Content Include="Content\posters\Sooryanvansham1999.jpg" />
     <Content Include="Content\posters\sura2010.jpg" />
     <Content Include="Content\posters\Taarzan The Wonder2004.jpg" />
     <Content Include="Content\posters\Tango Charlie2005.jpg" />
